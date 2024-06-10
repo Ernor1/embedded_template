@@ -26,22 +26,18 @@ This application detects and recognizes customers' faces, ensuring that the face
 
 2. **Install Dependencies**
     ```bash
-    pip install opencv-python opencv-contrib-python tensorflow==2.12.0 keras==2.12.0  numpy
+    pip install opencv-python opencv-contrib-python tensorflow==2.12.0 keras==2.12.0 numpy
     ```
 
-**N.B:**
-    if you already installed tensorflow and keras and you are having trouble learning teachable machine model.
-    Uninstall keras and tensorflow and install the indicated versions.
+**N.B:** If you already installed TensorFlow and Keras and you are having trouble loading the Teachable Machine model, uninstall Keras and TensorFlow and install the indicated versions:
 
-        ```bash
-    pip uninstall keras tensorflow
+```bash
+pip uninstall keras tensorflow
+```
 
-    ```
-
-        ```bash
-    pip install tensorflow==2.12.0 keras==2.12.0
-    ```
-
+```bash
+pip install tensorflow==2.12.0 keras==2.12.0 numpy
+```
 
 3. **Prepare the Models and Database**
     - **Face Recognition Model**: Ensure you have the pre-trained `trained_lbph_face_recognizer_model.yml` file in the `models/` directory.
@@ -53,7 +49,7 @@ This application detects and recognizes customers' faces, ensuring that the face
 
 1. **Run the Application**
     ```bash
-    python vito.py
+    python face_sign_recognition.py
     ```
 
 2. **Functionality**
