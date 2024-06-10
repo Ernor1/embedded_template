@@ -10,7 +10,7 @@ This application detects and recognizes customers' faces, ensuring that the face
 - **Database Integration**: Stores customer information in an SQLite database after successful verification.
 
 ## Requirements
-- Python 3.x
+- Python 3.11.2 !important
 - OpenCV
 - Keras (with TensorFlow backend)
 - NumPy
@@ -26,8 +26,22 @@ This application detects and recognizes customers' faces, ensuring that the face
 
 2. **Install Dependencies**
     ```bash
-    pip install opencv-python opencv-contrib-python keras numpy
+    pip install opencv-python opencv-contrib-python tensorflow==2.12.0 keras==2.12.0  numpy
     ```
+
+**N.B:**
+    if you already installed tensorflow and keras and you are having trouble learning teachable machine model.
+    Uninstall keras and tensorflow and install the indicated versions.
+
+        ```bash
+    pip uninstall keras tensorflow
+
+    ```
+
+        ```bash
+    pip install tensorflow==2.12.0 keras==2.12.0
+    ```
+
 
 3. **Prepare the Models and Database**
     - **Face Recognition Model**: Ensure you have the pre-trained `trained_lbph_face_recognizer_model.yml` file in the `models/` directory.
@@ -39,7 +53,7 @@ This application detects and recognizes customers' faces, ensuring that the face
 
 1. **Run the Application**
     ```bash
-    python face_sign_recognition.py
+    python vito.py
     ```
 
 2. **Functionality**
