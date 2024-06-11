@@ -115,7 +115,7 @@ while True:
         cv2.imshow("Sign Detection", sign_image)
 
         # Check if the sign is "OK" and the confidence is above threshold
-        if class_name[2:].lower() == "ok_sign" and confidence_score > 0.75:  # Adjust confidence threshold as needed
+        if class_name[2:].lower() == "class 1" and confidence_score > 0.75:  # Adjust confidence threshold as needed
             try:
                 conn = sqlite3.connect('customer_faces_data.db')
                 c = conn.cursor()
