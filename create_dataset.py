@@ -110,7 +110,7 @@ if len(faces) > 0:
                 # Generate filename without spaces
                 image_name = f"data.{customer_uid}_{image_count+1}.jpg"
                 image_path = os.path.join('dataset', image_name)
-                
+
                 # Save the captured image
                 cv2.imwrite(image_path, gray[y:y + h, x:x + w])
                 current_time = time.time()
